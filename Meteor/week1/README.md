@@ -15,3 +15,13 @@ Meteor applications are written in Javascript, CSS and HTML, so you do not need 
 
 Quiz 2
 ![Quiz 2](QZ2.png)
+
+
+Install Meteor
+Quiz 3
+![Quiz 3](QZ3.png)
+
+
+Editing a template
+Quiz 4
+![Quiz 4](QZ4.png)
