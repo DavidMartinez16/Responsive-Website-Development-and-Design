@@ -16,9 +16,9 @@ Created by:
 
 5 Courses and 1 Capstone Project
 
-1 Responsive Website Basics: Code with HTML, CSS, and JavaScript
-2 Responsive Web Design
-3 Introduction to Meteor.js Development
-4 Web Application Development with JavaScript and MongoDB
-5 Responsive Website Tutorial and Examples
-6 Responsive Website Development and Design Capstone
+* 1 Responsive Website Basics: Code with HTML, CSS, and JavaScript
+* 2 Responsive Web Design
+* 3 Introduction to Meteor.js Development
+* 4 Web Application Development with JavaScript and MongoDB
+* 5 Responsive Website Tutorial and Examples
+* 6 Responsive Website Development and Design Capstone
