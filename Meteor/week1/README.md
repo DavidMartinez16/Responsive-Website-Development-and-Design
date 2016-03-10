@@ -12,3 +12,6 @@ Meteor applications are written in Javascript, CSS and HTML, so you do not need 
 * Meteor includes the capability to generate native iOS and Android apps from the same Javascript code base.
 * It implements an isomorphic model which means you run the same code base on the server and the client.
 * It runs on top of Node.js and MongoDB and can be deployed on any server that supports these systems.
+
+Quiz 2
+![Quiz 2](QZ2.png)
