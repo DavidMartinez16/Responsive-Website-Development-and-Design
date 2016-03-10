@@ -27,5 +27,13 @@ Quiz 4
 ![Quiz 4](QZ4.png)
 
 Sending data to templates with helpers
-Quiz 4
-![Quiz 4](QZ5.png)
+Quiz 5
+![Quiz 5](QZ5.png)
+
+Convert to a Bootstrap grid
+Quiz 6
+![Quiz 6](QZ6.png)
+
+Responding to user actions
+Quiz 7
+![Quiz 7](QZ7.png)
