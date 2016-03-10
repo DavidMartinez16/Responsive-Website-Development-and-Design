@@ -25,3 +25,7 @@ Quiz 3
 Editing a template
 Quiz 4
 ![Quiz 4](QZ4.png)
+
+Sending data to templates with helpers
+Quiz 4
+![Quiz 4](QZ5.png)
