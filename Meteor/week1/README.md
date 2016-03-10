@@ -37,3 +37,7 @@ Quiz 6
 Responding to user actions
 Quiz 7
 ![Quiz 7](QZ7.png)
+
+
+Meteor summary quiz
+![Quiz summary quiz](QZSM.png)
