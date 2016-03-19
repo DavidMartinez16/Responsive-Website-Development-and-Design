@@ -1,0 +1,132 @@
+<head>
+  <title>siteace</title>
+</head>
+
+<body>
+	<!-- navbar  - you will be putting the login functions here -->
+  	<nav class="navbar navbar-default navbgcolor">
+	  <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-12 col-md-4">
+	               <div class="navbar-header">
+	                   <a class="navbar-brand siteace" href="#">
+	                   Site Ace
+	                    </a>
+	                   </div>
+                 </div>  
+               <div class="col-sm-12 col-md-8  text-right">
+                   <div class="row">
+                    <div class="col-sm-1 col-md-6">
+           
+                    </div>
+                    
+                    <div class="form-group col-sm-11 col-md-6  has-feedback">
+                        {{> search_wsite}}                          
+                    </div>
+                      
+                   </div>
+                </div>
+              </div>
+	      </div>
+      
+	</nav>
+
+
+	<div class="container">
+	<div class="row">
+        <div class="col-xs-12"> 
+    	{{> website_form}}
+        </div>
+	</div>
+    
+	</div>
+    <div class="container">
+        {{> website_list}}
+    </div>
+</body>
+<template name="search_wsite">
+    <div class="input-group searchbox">
+                                    <input maxlength="150" id="searchbytext" type="text" placeholder="Search" class="form-control "/>
+                                     <span class="input-group-addon" >
+                                        <span class="glyphicon glyphicon-search js-search" ></span>
+                                     </span>
+                                  </div>
+</template>
+
+<template name="website_form">
+	<a class="btn btn-info js-toggle-website-form" href="#">
+  		<span class="glyphicon glyphicon-plus " aria-hidden="true"></span>
+	</a>
+	<div id="website_form" class="hidden_div website_form_outline" >
+		<form class="js-save-website-form">
+		  <div class="form-group" >
+		    <label for="url">Site address</label>
+		    <input type="text" class="form-control" id="url" placeholder="http://www.mysite.com">
+		  </div>
+		  <div class="form-group">
+		    <label for="title" >Title</label>
+		    <input type="text" class="form-control" id="title" placeholder="Mysite" disabled="disabled">
+		  </div>
+		    <div class="form-group">
+		    <label for="description">Description</label>
+		    <textarea disabled="disabled" type="text"  class="form-control"
+             id="description" placeholder="I found this site really useful for ..." rows="5"  cols="35">
+		    </textarea>
+		  </div>
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</template>
+
+<!-- template that displays several website items -->
+<template name="website_list">
+  {{#if warn}}
+  <div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close js-clear-search" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Warning!</strong>    Your search is currently been by {{searchedBy}}
+</div>  
+{{/if}}  
+
+	<!-- <ol> -->
+   <div class="row">
+	{{#each websites}}
+	{{>website_item}}
+	{{/each}}
+    </div>
+	<!-- </ol> -->
+    
+ 
+</template>
+
+<!-- template that displays individual website entries -->
+<template name="website_item">
+
+    
+    <div class="col-xs-12 col-md-4 ">
+     <div class="colitems">
+     {{index}}. &nbsp; 
+	<a href="{{url}}">{{title}}</a>
+	<p>
+		{{description}}
+	</p>
+    Vote:
+	<a href="#" class="btn btn-primary btn-xs js-upvote">
+		<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+	</a>
+	<a href="#" class="btn btn-warning btn-xs js-downvote">
+		<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+	</a>
+    <br>
+    <span class="votetext">Posted on:</span>{{formatDate createdOn }}<br>  
+    <span class="votetext">Up:</span><span class="upText">{{upvote}}</span>&nbsp;&nbsp;
+    <span class="votetext">Down:</span><span class="dwnText">{{dwnvote}}</span>
+    </div>
+      </div>
+    
+      
+     
+   
+    <!-- you will be putting your up and down vote buttons in here! -->
+
+</template>

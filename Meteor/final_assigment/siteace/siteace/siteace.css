@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+.hidden_div{
+	display:none;
+}
+.navbgcolor{background-color:#203651}
+.siteace{color:#ffffff}
+.searchbox{top:6px;}
+.colorplus{color:#999CA7}
+.website_item_li {border-bottom:1px #999CA7 solid;padding:5px}
+.website_form_outline {border:2px #B5DBDE solid;padding:5px}
+.votetext {font-weight:bold; font-size:11px;}
+.dwnText{color:#f0ad4e; font-size:20px;font-weight: bold}
+.upText{color:#23527c; font-size:20px;font-weight: bold }
+.colitems{background-color:#cccccc;  border: #696969 1px solid; padding: 5px; margin:2px}
